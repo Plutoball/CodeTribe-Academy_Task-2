@@ -1,13 +1,23 @@
 {
     "compilerOptions": {
-        "jsx": "react",
-        "target": "es6",
-        "module": "esnext",
+        "jsx": "react-jsx",
+        "target": "ESNext",
+        "module": "nodenext",
+        "types": ["vite/client", "node"],
+        "moduleResolution": "nodenext",
+        "paths": {
+            "@/*": ["src/*"]
+        },
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "outDir": "./dist",
-        "rootDir": "./src"  
-    }
+        "rootDir": "./",
+        "baseUrl": "./", 
+    },
+    "include": [
+        "src",
+        "vite.config.ts",
+    ],
 }

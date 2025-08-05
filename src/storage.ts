@@ -4,7 +4,7 @@
 
 // Uses saveLinks(links: Link[]): void to convert array elements into strings  + store them.
 
-import { Link } from '../types/Link'; //is definde in types.ts
+import { Link } from '../types'; //is definde in types.ts
 
 function getLinks() : Link[] {
     const links = localStorage.getItem('links');//Get links form local storage.

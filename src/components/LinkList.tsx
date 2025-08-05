@@ -7,7 +7,7 @@ import { LinkItem } from './LinkItem';
 import { Link } from '../types/Link';
 
 interface LinkListProps {
-    links : Link[];
+    links : Link[]; 
 }
 
 export const LinkList : React.FC<LinkListProps> = ({ links }) => {
